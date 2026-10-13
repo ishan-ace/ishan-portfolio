@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Ishan Sharma — Shopify and WooCommerce developer specializing in Shopify Liquid, custom theme sections, storefront functionality, WordPress, and Elementor.">
+  <meta name="description" content="Ishan Sharma — Shopify and e-commerce developer specializing in custom Shopify stores, Liquid, product pages, AJAX cart functionality, Squarespace, WordPress, and Elementor.">
   <title>Ishan Sharma — Shopify & E-commerce Developer</title>
   <style>
     :root{--bg:#0b0d12;--panel:#11151e;--panel2:#151b26;--text:#f4f6fb;--muted:#a3adbf;--line:rgba(255,255,255,.1);--accent:#a5f36d;--accent2:#b7a6ff;--max:1120px}
@@ -12,6 +12,14 @@
     @media(max-width:800px){.navlinks{display:none;position:absolute;left:0;right:0;top:76px;padding:18px 20px 22px;background:#10131a;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-toggle{display:block}.nav-cta{display:none}.hero{grid-template-columns:1fr;padding:68px 0 54px;gap:10px}.hero-art{min-height:320px}.orb{width:240px;height:240px}.code-card{max-width:330px}.tag-one{right:5%}.tag-two{left:5%}.section{padding:58px 0}.section-head{display:block}.section-intro{margin-top:16px}.services{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:22px}.contact-box{display:block}.contact-box .btn{margin-top:24px}}
     @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav{height:68px}.navlinks{top:68px}.brand{font-size:14px}.hero{padding-top:54px}h1{font-size:44px}.hero-copy{font-size:16px}.hero-art{min-height:290px}.code-card{padding:17px}.tag-one{top:24px}.tag-two{bottom:20px}.stats{grid-template-columns:1fr}.stat{padding:16px}.projects,.services{grid-template-columns:1fr}.project-visual{min-height:205px}.process{grid-template-columns:1fr 1fr;gap:8px}.step{padding:15px 10px}.project-top{align-items:flex-start;flex-direction:column}.footer-inner{flex-direction:column}.footer-links{flex-wrap:wrap}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+    .projects-expanded{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .site-shot{height:260px;min-height:260px;padding:0;background:#151922;position:relative}
+    .site-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .35s}
+    .project:hover .site-shot img{transform:scale(1.025)}
+    .shot-label{position:absolute;left:12px;bottom:12px;padding:5px 8px;border-radius:6px;background:rgba(9,12,17,.82);border:1px solid rgba(255,255,255,.15);font-size:10px;letter-spacing:.1em;color:#f4f6fb}
+    @media(max-width:560px){.projects-expanded{grid-template-columns:1fr}.site-shot{height:220px;min-height:220px}}
+
   </style>
 </head>
 <body>
@@ -67,63 +75,111 @@
     <section class="section" id="work">
       <div class="wrap">
         <div class="section-head reveal">
-          <div><div class="kicker">Selected work</div><h2>Practical builds.<br>Thoughtful details.</h2></div>
-          <p class="section-intro">Selected work includes Shopify development and homepage redesigns for Hobbyz and ActiveEarth, plus a Squarespace redesign for Automated Control Systems. Project previews use live-site image URLs where available, with styled fallbacks if a source image URL changes.</p>
+          <div><div class="kicker">Selected work</div><h2>Real projects.<br>Custom solutions.</h2></div>
+          <p class="section-intro">Shopify storefronts, custom product-page functionality, redesigns, and a Squarespace business website. Select any project to open the live site. Preview images are generated from the linked websites and may take a moment to load.</p>
         </div>
-        <div class="projects">
+        <div class="projects projects-expanded">
           <article class="project reveal">
-            <a href="https://aurieluxeco.com/" target="_blank" rel="noreferrer" aria-label="View Aurié Luxe Co. live Shopify store">
-              <div class="project-visual real-shot">
-                <img src="https://aurieluxeco.com/cdn/shop/files/40.webp?v=1756066079&width=1000" alt="Aurié Luxe Co. scented candle collection" loading="lazy">
+            <a href="https://aurieluxeco.com/" target="_blank" rel="noreferrer" aria-label="View Aurié Luxe Co. — Full Shopify Store live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://aurieluxeco.com/" alt="Screenshot preview of Aurié Luxe Co. — Full Shopify Store website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://aurieluxeco.com/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
               </div>
             </a>
-            <div class="project-body">
-              <div class="project-top"><h3>Aurié Luxe Co. — Full Shopify Store</h3><span class="pill">Shopify</span></div>
-              <p>Full Shopify store custom development, from the homepage and collection experience to product pages and a custom cart. The implementation brings the storefront design and shopping journey together across devices.</p>
-              <div class="chips"><span>Shopify Liquid</span><span>Custom sections</span><span>Product pages</span><span>Custom cart</span><span>Responsive UI</span></div>
-              <a class="project-link" href="https://aurieluxeco.com/" target="_blank" rel="noreferrer">View live website <span aria-hidden="true">↗</span></a>
-            </div>
+            <div class="project-body"><div class="project-top"><h3>Aurié Luxe Co. — Full Shopify Store</h3><span class="pill">Shopify</span></div><p>Full custom Shopify storefront development, including homepage, product and collection pages, AJAX cart functionality, and supporting store UI.</p><div class="chips"><span>Custom Shopify theme</span><span>Liquid</span><span>AJAX cart</span><span>Product &amp; collection pages</span></div><a class="project-link" href="https://aurieluxeco.com/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project reveal">
-            <a href="https://aurieluxeco.com/products/chandni-raatien" target="_blank" rel="noreferrer" aria-label="View Aurié Luxe Co. product page">
-              <div class="project-visual real-shot">
-                <img src="https://aurieluxeco.com/cdn/shop/files/IMG_4036.heic?v=1749783236&width=1000" alt="Aurié Luxe Co. Chandni Raatien candle product photography" loading="lazy">
+            <a href="https://www.hobbyz.ae/" target="_blank" rel="noreferrer" aria-label="View Hobbyz — Homepage live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://www.hobbyz.ae/" alt="Screenshot preview of Hobbyz — Homepage website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://www.hobbyz.ae/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
               </div>
             </a>
-            <div class="project-body"><div class="project-top"><h3>Product Page & Cart Journey</h3><span class="pill">Shopify</span></div><p>Product page customization and shopping-flow work for the store, including product presentation and custom cart functionality.</p><div class="chips"><span>Product pages</span><span>Shopify Liquid</span><span>Cart UX</span><span>Responsive UI</span></div><a class="project-link" href="https://aurieluxeco.com/products/chandni-raatien" target="_blank" rel="noreferrer">View product page <span aria-hidden="true">↗</span></a></div>
+            <div class="project-body"><div class="project-top"><h3>Hobbyz — Homepage</h3><span class="pill">Shopify</span></div><p>Homepage design and implementation for a UAE e-commerce store focused on books, activities, and screen-free learning.</p><div class="chips"><span>Homepage redesign</span><span>Shopify</span><span>Responsive UI</span><span>E-commerce</span></div><a class="project-link" href="https://www.hobbyz.ae/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project reveal">
-            <a href="https://www.hobbyz.ae/" target="_blank" rel="noreferrer" aria-label="View Hobbyz live website">
-              <div class="project-visual real-shot">
-                <img src="https://www.hobbyz.ae/cdn/shop/files/hero-banner.webp?width=1000" alt="Hobbyz e-commerce homepage redesign" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.remove('real-shot');this.parentElement.innerHTML='<div class=&quot;browser&quot;><div class=&quot;browser-bar&quot;><i></i><i></i><i></i></div><div class=&quot;mock-content&quot;><div class=&quot;mock-nav&quot;><span>HOBBYZ</span><span>BOOKS　 LEARNING　 CART</span></div><div class=&quot;mock-hero&quot;><div><div class=&quot;mock-title&quot;>Make room<br>for curiosity.</div><div class=&quot;mock-small&quot;>Books, activities and screen-free learning.</div><span class=&quot;mock-button&quot;>EXPLORE ↗</span></div><div class=&quot;mock-product&quot;>✦</div></div></div></div>'">
+            <a href="https://activeearth.com/" target="_blank" rel="noreferrer" aria-label="View Active Earth — Homepage &amp; Product Page live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://activeearth.com/" alt="Screenshot preview of Active Earth — Homepage &amp; Product Page website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://activeearth.com/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
               </div>
             </a>
-            <div class="project-body"><div class="project-top"><h3>Hobbyz — Homepage Redesign</h3><span class="pill">Shopify</span></div><p>Homepage redesign for a UAE e-commerce store focused on books, activity products, and screen-free learning. My contribution: homepage design and implementation.</p><div class="chips"><span>Shopify</span><span>Homepage UI</span><span>Responsive design</span><span>E-commerce</span></div><a class="project-link" href="https://www.hobbyz.ae/" target="_blank" rel="noreferrer">View live website <span aria-hidden="true">↗</span></a></div>
+            <div class="project-body"><div class="project-top"><h3>Active Earth — Homepage &amp; Product Page</h3><span class="pill">Shopify</span></div><p>Homepage and product page redesign focused on clear product presentation, brand storytelling, and the shopping journey.</p><div class="chips"><span>Homepage</span><span>Product page</span><span>Shopify</span><span>Responsive design</span></div><a class="project-link" href="https://activeearth.com/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project reveal">
-            <a href="https://activeearth.com/" target="_blank" rel="noreferrer" aria-label="View ActiveEarth live website">
-              <div class="project-visual real-shot">
-                <img src="https://activeearth.com/cdn/shop/files/activeearth-homepage.jpg?width=1000" alt="ActiveEarth skincare homepage redesign" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.remove('real-shot');this.parentElement.innerHTML='<div class=&quot;browser&quot;><div class=&quot;browser-bar&quot;><i></i><i></i><i></i></div><div class=&quot;mock-content&quot;><div class=&quot;mock-nav&quot;><span>ACTIVE EARTH</span><span>SHOP　 OUR STORY　 BAG</span></div><div class=&quot;mock-hero&quot;><div><div class=&quot;mock-title&quot;>Skincare meets<br>self-care.</div><div class=&quot;mock-small&quot;>Thoughtful essentials for your routine.</div><span class=&quot;mock-button&quot;>SHOP NOW ↗</span></div><div class=&quot;mock-product&quot;>◉</div></div></div></div>'">
+            <a href="https://mytridesigns.com/products/standing-photo-frame-brass" target="_blank" rel="noreferrer" aria-label="View MyTriDesigns — Product Page Functions live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://mytridesigns.com/products/standing-photo-frame-brass" alt="Screenshot preview of MyTriDesigns — Product Page Functions website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://mytridesigns.com/products/standing-photo-frame-brass';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
               </div>
             </a>
-            <div class="project-body"><div class="project-top"><h3>ActiveEarth — Homepage Redesign</h3><span class="pill">Shopify</span></div><p>Homepage redesign for a skincare e-commerce brand, with a focus on presenting products, brand messaging, and shopping paths clearly.</p><div class="chips"><span>Shopify</span><span>Homepage UI</span><span>Responsive design</span><span>Product discovery</span></div><a class="project-link" href="https://activeearth.com/" target="_blank" rel="noreferrer">View live website <span aria-hidden="true">↗</span></a></div>
+            <div class="project-body"><div class="project-top"><h3>MyTriDesigns — Product Page Functions</h3><span class="pill">Shopify</span></div><p>Custom product-page functionality for a product detail experience, tailored to the store’s requirements.</p><div class="chips"><span>Product page</span><span>Custom functionality</span><span>Shopify Liquid</span><span>JavaScript</span></div><a class="project-link" href="https://mytridesigns.com/products/standing-photo-frame-brass" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project reveal">
-            <a href="https://www.automatedcontrolsystems.co.uk/" target="_blank" rel="noreferrer" aria-label="View Automated Control Systems live website">
-              <div class="project-visual real-shot">
-                <img src="https://images.squarespace-cdn.com/content/v1/64b7c8f00000000000000000/hero.jpg?format=1000w" alt="Automated Control Systems website redesign" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.remove('real-shot');this.parentElement.innerHTML='<div class=&quot;browser&quot;><div class=&quot;browser-bar&quot;><i></i><i></i><i></i></div><div class=&quot;mock-content&quot;><div class=&quot;mock-nav&quot;><span>ACS</span><span>GATES　 GALLERY　 CONTACT</span></div><div class=&quot;mock-hero&quot;><div><div class=&quot;mock-title&quot;>Security meets<br>craftsmanship.</div><div class=&quot;mock-small&quot;>Bespoke gates and automation.</div><span class=&quot;mock-button&quot;>VIEW OUR WORK ↗</span></div><div class=&quot;mock-product&quot;>⌂</div></div></div></div>'">
+            <a href="https://antiquearchaeology.com/" target="_blank" rel="noreferrer" aria-label="View Antique Archaeology — Store Setup &amp; Redesign live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://antiquearchaeology.com/" alt="Screenshot preview of Antique Archaeology — Store Setup &amp; Redesign website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://antiquearchaeology.com/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
               </div>
             </a>
-            <div class="project-body"><div class="project-top"><h3>Automated Control Systems — Website Redesign</h3><span class="pill">Squarespace</span></div><p>Squarespace website redesign for an automated gates and access-control business, including a custom gallery page and enquiry form.</p><div class="chips"><span>Squarespace</span><span>Website redesign</span><span>Custom gallery</span><span>Enquiry form</span></div><a class="project-link" href="https://www.automatedcontrolsystems.co.uk/" target="_blank" rel="noreferrer">View live website <span aria-hidden="true">↗</span></a></div>
+            <div class="project-body"><div class="project-top"><h3>Antique Archaeology — Store Setup &amp; Redesign</h3><span class="pill">Shopify</span></div><p>Shopify store setup and redesign work, improving storefront structure and the overall shopping experience.</p><div class="chips"><span>Store setup</span><span>Store redesign</span><span>Shopify</span><span>Theme customization</span></div><a class="project-link" href="https://antiquearchaeology.com/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project reveal">
-            <div class="project-visual">
-              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-nav"><span>OBJECTS & CO.</span><span>SHOP　 FILTER　 BAG</span></div><div style="font-size:17px;font-weight:850">Objects for everyday living</div><div class="mock-grid"><span style="height:76px;background:#d4c8b7"></span><span style="height:76px;background:#c2d0c2"></span><span style="height:76px;background:#c4c2db"></span></div><div class="mock-small">Shop layout · Product cards · Responsive grid</div></div></div>
-            </div>
-            <div class="project-body"><div class="project-top"><h3>WooCommerce Store UI</h3><span class="pill">WooCommerce</span></div><p>Shop and product layout customization, including responsive grids, product presentation, and theme styling for a more consistent shopping experience.</p><div class="chips"><span>WooCommerce</span><span>Product layouts</span><span>Elementor</span><span>CSS</span></div></div>
+            <a href="https://www.k2ksigns.com.au/" target="_blank" rel="noreferrer" aria-label="View K2K Signs — Store Management &amp; Redesign live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://www.k2ksigns.com.au/" alt="Screenshot preview of K2K Signs — Store Management &amp; Redesign website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://www.k2ksigns.com.au/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>K2K Signs — Store Management &amp; Redesign</h3><span class="pill">Shopify</span></div><p>Shopify store management and redesign support for a signage e-commerce storefront.</p><div class="chips"><span>Store management</span><span>Redesign</span><span>Shopify</span><span>Responsive UI</span></div><a class="project-link" href="https://www.k2ksigns.com.au/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project reveal">
+            <a href="https://www.k2ksigns.com.au/products/danger-commissioning-in-progress-sign" target="_blank" rel="noreferrer" aria-label="View K2K Signs — Product Page Functions live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://www.k2ksigns.com.au/products/danger-commissioning-in-progress-sign" alt="Screenshot preview of K2K Signs — Product Page Functions website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://www.k2ksigns.com.au/products/danger-commissioning-in-progress-sign';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>K2K Signs — Product Page Functions</h3><span class="pill">Shopify</span></div><p>Custom product-page functions for a product listing in a specialist signage store.</p><div class="chips"><span>Product page</span><span>Custom functions</span><span>Shopify</span><span>Liquid</span></div><a class="project-link" href="https://www.k2ksigns.com.au/products/danger-commissioning-in-progress-sign" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project reveal">
+            <a href="https://autotechtrends.com/products/genesis-running-boards" target="_blank" rel="noreferrer" aria-label="View AutoTechTrends — Custom Product Page live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://autotechtrends.com/products/genesis-running-boards" alt="Screenshot preview of AutoTechTrends — Custom Product Page website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://autotechtrends.com/products/genesis-running-boards';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>AutoTechTrends — Custom Product Page</h3><span class="pill">Shopify</span></div><p>Full custom product-page implementation with tailored product content, layout, and shopping interactions.</p><div class="chips"><span>Custom product page</span><span>Shopify</span><span>Liquid</span><span>E-commerce UX</span></div><a class="project-link" href="https://autotechtrends.com/products/genesis-running-boards" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project reveal">
+            <a href="https://www.automatedcontrolsystems.co.uk/" target="_blank" rel="noreferrer" aria-label="View Automated Control Systems — Website live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://www.automatedcontrolsystems.co.uk/" alt="Screenshot preview of Automated Control Systems — Website website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://www.automatedcontrolsystems.co.uk/';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>Automated Control Systems — Website</h3><span class="pill">Squarespace</span></div><p>Squarespace website build and redesign for an automated gates and access-control business.</p><div class="chips"><span>Squarespace</span><span>Website build</span><span>Responsive design</span><span>Business website</span></div><a class="project-link" href="https://www.automatedcontrolsystems.co.uk/" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project reveal">
+            <a href="https://www.automatedcontrolsystems.co.uk/our-gallery" target="_blank" rel="noreferrer" aria-label="View Automated Control Systems — Gallery Page live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://www.automatedcontrolsystems.co.uk/our-gallery" alt="Screenshot preview of Automated Control Systems — Gallery Page website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://www.automatedcontrolsystems.co.uk/our-gallery';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>Automated Control Systems — Gallery Page</h3><span class="pill">Squarespace</span></div><p>Gallery page implementation to present completed work clearly and make the portfolio easy to browse.</p><div class="chips"><span>Custom gallery</span><span>Squarespace</span><span>Responsive layout</span><span>Project showcase</span></div><a class="project-link" href="https://www.automatedcontrolsystems.co.uk/our-gallery" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project reveal">
+            <a href="https://libertadvidasv.com/products/addicted-to-liquid-matte-lipstick" target="_blank" rel="noreferrer" aria-label="View Libertad Vida SV — Product Variant Picker live site">
+              <div class="project-visual real-shot site-shot">
+                <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/https://libertadvidasv.com/products/addicted-to-liquid-matte-lipstick" alt="Screenshot preview of Libertad Vida SV — Product Variant Picker website" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1000/noanimate/https://libertadvidasv.com/products/addicted-to-liquid-matte-lipstick';">
+                <span class="shot-label">LIVE SITE PREVIEW</span>
+              </div>
+            </a>
+            <div class="project-body"><div class="project-top"><h3>Libertad Vida SV — Product Variant Picker</h3><span class="pill">Shopify</span></div><p>Product page customization featuring a custom variant picker and bespoke sections.</p><div class="chips"><span>Custom variant picker</span><span>Product page</span><span>Liquid</span><span>Custom sections</span></div><a class="project-link" href="https://libertadvidasv.com/products/addicted-to-liquid-matte-lipstick" target="_blank" rel="noreferrer">View live project <span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
-        <p class="notice">Portfolio note: project cards link to the live websites. Image URLs may change as sites are updated; the cards include styled fallbacks. Only publish project descriptions that accurately reflect your contribution and that you have permission to showcase.</p>
+        <p class="notice">Project descriptions reflect the work you listed. Keep only projects you are authorized to showcase, and make sure each description accurately represents your contribution. Live-site screenshot previews depend on the external preview service and the target site being accessible.</p>
       </div>
     </section>
 
@@ -161,7 +217,7 @@
       <div class="wrap">
         <div class="contact-box reveal">
           <div><div class="kicker">Have a project in mind?</div><h2>Need an extra developer on your team?</h2><p>Tell me what you're building, what needs fixing, or where your team needs support.</p></div>
-          <a class="btn primary" id="emailButton" href="mailto:ishansharma0038@gmail.com.com?subject=Freelance%20development%20enquiry">Start a conversation ↗</a>
+          <a class="btn primary" id="emailButton" href="mailto:YOUR_EMAIL@example.com?subject=Freelance%20development%20enquiry">Start a conversation ↗</a>
         </div>
         <p class="notice">Before publishing: replace the placeholder email and add your LinkedIn, Contra, and portfolio links in the footer below.</p>
       </div>
